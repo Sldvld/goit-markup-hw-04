@@ -124,8 +124,7 @@ img {
 .envelope {
     width: 16px;
     height: 12px;
-    border: 2px dashed violet;
-    fill: black;
+    fill: var(--secondary-text-color)
 }
 
 /* Hero styles */
