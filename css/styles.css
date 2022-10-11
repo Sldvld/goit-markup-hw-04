@@ -124,7 +124,9 @@ img {
 .envelope {
     width: 16px;
     height: 12px;
-    fill: var(--secondary-text-color)
+    fill: var(--secondary-text-color);
+    background-color: #188CE8;
+    
 }
 
 /* Hero styles */
