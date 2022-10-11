@@ -124,18 +124,8 @@ img {
 .envelope {
     width: 16px;
     height: 12px;
-    fill: var(--secondary-text-color);
-}
-.envelope:hover {
-    fill: var(--brand-color)
-}
-.smartphone {
-    width: 10px;
-    height: 16px;
-    fill: var(--secondary-text-color)
-}
-.smartphone:hover {
-    fill: var(--brand-color)
+    border: 2px dashed violet;
+    fill: black;
 }
 
 /* Hero styles */
