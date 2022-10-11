@@ -125,8 +125,17 @@ img {
     width: 16px;
     height: 12px;
     fill: var(--secondary-text-color);
-    background-color: #188CE8;
-    
+}
+.envelope:hover {
+    fill: var(--brand-color)
+}
+.smartphone {
+    width: 10px;
+    height: 16px;
+    fill: var(--secondary-text-color)
+}
+.smartphone:hover {
+    fill: var(--brand-color)
 }
 
 /* Hero styles */
