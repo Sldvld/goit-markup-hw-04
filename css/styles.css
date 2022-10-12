@@ -19,6 +19,7 @@ body {
     --secondary-text-color: #757575;
     --main-white-color: #ffffff;
     --main-black-color: #000000;
+    --borders-color: #AFB1B8;
 }
 h1,h2,h3,h4,h5,h6,p,ul {
     padding: 0;
@@ -105,14 +106,14 @@ img {
 .contact-list:focus {
     color: var(--brand-color);
 }
-.box-cotact-list {
+.box-contact-list {
     display: inline-block;
     /* outline: 2px solid tomato; */
     margin-left: auto;
 }
 .list {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .list .item + .item {
@@ -269,7 +270,7 @@ img {
 
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.16;
+    line-height: 1.17;
     color: var(--main-text-color);
 }
 .list-members {
@@ -287,7 +288,7 @@ img {
     color: var(--main-text-color);
 }
 .members-speciality {
-    margin-bottom: 0px;
+    margin-bottom: 16px;
     text-align: center;
 
     font-weight: 400;
@@ -299,8 +300,72 @@ img {
     display: block;
     margin-bottom: 30px;
 }
+.messengers-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.messengers-links {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-white-color);
+    border-radius: 50%;
+    color: var(--borders-color);
+}
+.messengers-icon {
+    fill: currentColor;
+}
+.messengers-links:hover,
+.messengers-links:focus {
+    background-color: var(--brand-color);
+    color: var(--main-white-color);
+}
+/* Partners */
+.partners {
+    padding: 94px 0px;
+}
+.our-clients {
+    text-align: center;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--main-text-color);
+}
+.list-clients {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients-links {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-white-color);
+    color: var(--borders-color);
+    border: 1px solid var(--borders-color);
+    border-radius: 4px;
+}
+.clients-icon {
+    fill: currentColor;
+}
+.clients-links:hover,
+.clients-links:focus {
+    color: var(--brand-color);
+    border: 1px solid var(--brand-color);
+}
+
 /* Footer */
-footer {
+.footer {
     background: #2F303A;
     letter-spacing: 0.03em;
 }
@@ -328,6 +393,11 @@ footer {
 /* Portfolio */
 .our-projects {
     border: 1px solid #EEEEEE;
+}
+.our-projects:hover,
+.our-projects:focus {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-button + .portfolio-button {
     margin-left: 8px;
@@ -406,6 +476,15 @@ footer {
 /* Footer */
 .footer {
     padding: 60px 0px;
+    background: #2F303A;
+}
+.footerbox {
+    display: block;
+}
+.footer-position {
+    display: flex;
+    align-items:baseline;
+    gap: 70px;
 }
 .logo-footer {
     display: inline-block;
@@ -432,5 +511,38 @@ footer {
     margin-bottom: 9px;
     font-style: normal;
     text-decoration: none;
+}
+.our-messengers {
+    display: block;
+}
+.invite {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--main-white-color);
+}
+.messengers-list-footer {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.messengers-icon-footer {
+    fill: currentColor;
+}
+.messengers-links-footer {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--main-white-color);
+}
+.messengers-links-footer:hover {
+    background-color: var(--brand-color);
 }
 /* The end */
