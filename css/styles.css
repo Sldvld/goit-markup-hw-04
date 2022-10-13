@@ -129,8 +129,11 @@ img {
     fill: var(--secondary-text-color);
     margin-right: 10px;
 }
-.contact-links:hover .envelope {
+.contact-links:focus .envelope {
     fill: var(--brand-color);
+}
+.contact-links:hover .envelope {
+    fill: var(--brand-color)
 }
 .smartphone {
     width: 10px;
@@ -138,8 +141,11 @@ img {
     fill: var(--secondary-text-color);
     margin-right: 10px;
 }
-.contact-links:hover .smartphone {
+.contact-links:focus .smartphone {
     fill: var(--brand-color);
+}
+.contact-links:hover .smartphone {
+    fill: var(--brand-color)
 }
 /* Hero styles */
 .hero {
@@ -542,7 +548,8 @@ img {
     border-radius: 50%;
     color: var(--main-white-color);
 }
-.messengers-links-footer:hover {
+.messengers-links-footer:hover,
+.messengers-links-footer:focus {
     background-color: var(--brand-color);
 }
 /* The end */
